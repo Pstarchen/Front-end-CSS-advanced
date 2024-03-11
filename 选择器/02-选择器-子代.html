@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 后代选择器 把div中的a全部都选中了 */
+        /* div a {
+            color: red;
+        } */
+
+        /* 使用子代选择器 只选中儿子 */
+        /* div的儿子a文字颜色是红色 */
+        div > a {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        父级
+        <a href="#">这是div里面的a</a>
+        <p>
+            <a href="#">这是div里面的p里面的a</a>
+        </p>
+    </div>
+</body>
+</html>
